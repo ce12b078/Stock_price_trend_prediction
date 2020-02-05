@@ -7,7 +7,7 @@ R file
 
 2_building_models
 R file
-#In this code, we will split processed rain data into train/test & train some models
+#In this code, we will split processed data into train/test & train some models
 #Tried logistic regression with all vars
 #Tried stepwise forward var selection with glm to find most imp vars
 
