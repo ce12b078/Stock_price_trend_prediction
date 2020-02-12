@@ -1,18 +1,41 @@
-# Stock_price_trend_prediction
-supervised machine learning to predict the movement of a stock price
+**Objective:** To predict if an unnamed stock will go up or down in one hour. 
 
-1_preprocessing
-R file
-#In this code, we will preprocess the train data, clean it and crate return vars
+**Dataset description:** It has 609 explanatory variables which include stock prices, sectoral data, economic data, experts predictions and indexes. All observations are taken at 5 minutes interval. The binary variable to be predicted is called ‘TargetVariable’ which indicates whether the unnamed stock will go up or down in one hour. 
 
-2_building_models
-R file
-#In this code, we will split processed data into train/test & train some models
-#Tried logistic regression with all vars
-#Tried stepwise forward var selection with glm to find most imp vars
+**Dataset used:** We have used the dataset from kaggle competitions website, current dataset is available at this link: https://www.kaggle.com/c/informs2010/data 
 
-3_PCA_timeOfDayNorm_Caret_ML_models
-R file
-#Apply PCA to processed data to check for results after dimensionality reduction
-#Doing time of the day normalisation of variables
-#Then, building a glm model on time of day normalised vars
+**Techniques/Models used:**
+
+•	Logistic Regression models: 
+
+•	with all independent variables 
+
+•	Stepwise variable selection and most correlated variables 
+
+•	L2 regularization 
+
+**SVM models:**
+
+•	Using Linear kernel 
+
+•	Using Radial kernel 
+
+**Results and evaluation criteria:**
+
+•	Different Models are compared based on: 
+
+•	Area under curve of ROC plots 
+
+•	Sensitivity, Specificity and Accuracy values based on True positive rate and True negative rate taken from Confusion Matrix 
+
+•	Balanced Classification Rate calculated from Confusion Matrix 
+
+•	Average accuracy on performing k-fold cross validation 
+
+**Results obtained:**
+
+•	Logistic Regression: accuracy- 0.89 , AUC of ROC plot- 0.94 
+
+•	SVM: accuracy- 0.92 , AUC of ROC plot- 0.96 
+
+
