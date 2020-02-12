@@ -6,7 +6,7 @@
 
 **Techniques/Models used:**
 
-•	Logistic Regression models: 
+**Logistic Regression models:**
 
 •	with all independent variables 
 
@@ -21,8 +21,6 @@
 •	Using Radial kernel 
 
 **Results and evaluation criteria:**
-
-•	Different Models are compared based on: 
 
 •	Area under curve of ROC plots 
 
